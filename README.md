@@ -1,0 +1,1 @@
+A simple vagrant bootstrap
