@@ -68,4 +68,6 @@ Vagrant.configure(2) do |config|
   #   sudo apt-get update
   #   sudo apt-get install -y apache2
   # SHELL
+  config.r10k.puppet_dir = 'puppet' # the parent directory that contains your module directory and Puppetfile
+  config.r10k.puppetfile_path = 'puppet/Puppetfile' # the path to your Puppetfile, within the repo
 end
