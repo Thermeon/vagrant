@@ -13,6 +13,11 @@ Vagrant.configure(2) do |config|
   # Every Vagrant development environment requires a box. You can search for
   # boxes at https://atlas.hashicorp.com/search.
   config.vm.box = "ubuntu/precise32"
+  
+
+  # r10k vagrant plugin
+  config.r10k.puppet_dir = 'dir' # the parent directory that contains your module directory and Puppetfile
+  config.r10k.puppetfile_path = 'dir/Puppetfile' # the path to your Puppetfile, within the repo
 
   # Disable automatic box update checking. If you disable this, then
   # boxes will only be checked for updates when the user runs
